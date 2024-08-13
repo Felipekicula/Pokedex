@@ -3,18 +3,34 @@
     src: url('./fonts/pokemon/Pokemon\ Hollow.ttf');
     font-weight: normal;
     font-style: normal;
-  }
-  
-
-.pokedex{
-    text-align: center;
-    background-color: red;
 }
 
-.pokedex h1 {
-    font-family: 'Pokemon';
-    font-size: 50px;
-    color: rgb(247, 207, 30);
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.432);
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+header{
+    padding: 10px;
+}
+
+.cabecalho{
+    border: 10px;
+    border-color: black;
+}
+
+
+.cabecalho h1{
+    font-weight: 900px;
+    font-size: 90px;
+    font-family: 'Pokemon', Arial, Helvetica, sans-serif;
+    color: rgb(231, 228, 27);
+    background-color: rgb(185, 10, 10);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+}
+
+
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
