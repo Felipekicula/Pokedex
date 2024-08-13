@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
+import './cardstyle.css';
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -23,38 +24,35 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <header className="d-flex justify-content-center mb-4">
-        <div className="cabecalho">
-          <h1 className="btn btn-primary">Pokedex</h1>
+    <div className="container-fluid p-0">
+      <header className="d-flex align-items-center justify-content-center header-container">
+        <div className="text-center">
+          <h1 className="display-3 text-white header-title">
+            <span>Pokedex</span>
+          </h1>
         </div>
       </header>
+      <div className="separator"></div>
+      
 
-      <div className="row justify-content-center">
-        {pokemonList.map((pokemon, index) => (
-          <div className="col-md-4 mb-4" key={index}>
-
-            <div className="card" style={{ width: '18rem' }}>
-
-              <img src={pokemon.sprites.front_default} className="card-img-top" alt={pokemon.name} />
-              
-              <div className="card-body">
-              <h5 className="card-title">{pokemon.name}</h5>
-              <p className="card-text">Altura: {pokemon.height} decímetros</p>
-              <p className="card-text">Peso: {pokemon.weight} hectogramas</p>
-              <p className="card-text">Experiência básica: {pokemon.base_experience}</p>
-
+      <div className="container-fluid body">
+        <div className="row justify-content-center g-3 card-container">
+          {pokemonList.map((pokemon, index) => (
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>
+              <div className="card">
+                <img src={pokemon.sprites.front_default} className="card-img-top" alt={pokemon.name} />
+                <div className="card-body">
+                  <h5 className="card-title">{pokemon.name}</h5>
+                  <p className="card-text">Altura: {pokemon.height} decímetros</p>
+                  <p className="card-text">Peso: {pokemon.weight} hectogramas</p>
+                </div>
+              </div>
             </div>
-
-          </div>
-
+          ))}
         </div>
-
-      ))}
+      </div>
     </div>
-  </div>
 
-    
   );
 }
 

@@ -12,25 +12,37 @@
 }
 
 
-header{
-    padding: 10px;
+
+.header-container {
+height: 100vh;
+background-image: url('https://www.chromethemer.com/download/hd-wallpapers/pokemon-3840x2160.jpg');
+background-size: cover;
+background-position: center;
 }
 
-.cabecalho{
-    border: 10px;
-    border-color: black;
+.header-title {
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+font-family: 'Pokemon', sans-serif;
 }
 
-
-.cabecalho h1{
-    font-weight: 900px;
-    font-size: 90px;
-    font-family: 'Pokemon', Arial, Helvetica, sans-serif;
-    color: rgb(231, 228, 27);
-    background-color: rgb(185, 10, 10);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897);
+.header-title span {
+background-color: #ff0000;
+padding: 10px 25px;
+padding-bottom: 20px;
+border-radius: 50px;
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+display: inline-block;
 }
 
+.body{
+    background-color: #0a4158;
+}
 
+.separator {
+border-bottom: 4px solid #000000;
+}
+  
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
