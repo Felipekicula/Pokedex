@@ -1,31 +1,31 @@
-@font-face {
+@font-face {  /*fonte externa com o estio de pokemon*/
     font-family: 'Pokemon';
     src: url('./fonts/pokemon/Pokemon\ Hollow.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-* {
-    margin: 0;
+* { /* reseta os "dados básicos da página*/
+    margin: 0;  
     padding: 0;
     box-sizing: border-box;
 }
 
 
 
-.header-container {
+.header-container { /*deixa imagem centralizada como fundo e ocupando 100% da tela*/
 height: 100vh;
 background-image: url('https://www.chromethemer.com/download/hd-wallpapers/pokemon-3840x2160.jpg');
 background-size: cover;
 background-position: center;
 }
 
-.header-title {
+.header-title { /*coloca sombra e a fonte de pokemon no titulo */
 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 font-family: 'Pokemon', sans-serif;
 }
 
-.header-title span {
+.header-title span { /*coloca um "botão" para dar destaque no título*/
 background-color: #ff0000;
 padding: 10px 25px;
 padding-bottom: 20px;
@@ -36,13 +36,13 @@ box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 display: inline-block;
 }
 
-.body{
+.body{ /*define uma cor de fundo*/
     background-color: #0a4158;
 }
 
-.separator {
+.separator { /*definie a cor da linha para separar a parte de cima da página para a de baixo*/
 border-bottom: 4px solid #000000;
 }
   
 
-@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css"; /* importa o bootstrap*/

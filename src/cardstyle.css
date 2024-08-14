@@ -1,8 +1,8 @@
-.card-container {
+.card-container { /*define a margin como zero do card-container*/
     margin: 0 auto;
 }
   
-.card {
+.card { /* define o tamanho, borda, sombra e cor do card*/
 width: 100%;
 border-radius: 10px;
 overflow: hidden;
@@ -11,20 +11,19 @@ border: 3px solid #000000;
 background-color: whitesmoke !important;
 }
 
-.card-img-top {
-border-radius: 10px 10px 0 0;
+.card-img-top { /*define tamanho da imagem*/
 width: 100%;
 }
 
-.card-body {
+.card-body { /*alinha o texto do card no meio*/
 text-align: center;
 }
 
-.card-title {
+.card-title { /*define o estilo da fonte e a margem*/
 font-family: Arial, sans-serif;
 margin-bottom: 0.5rem;
 }
 
-.card-text{
+.card-text{ /*define cor do texto*/
     color: rgb(0, 0, 0);
 }
